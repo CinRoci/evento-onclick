@@ -1,0 +1,69 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+div{
+    border: 1px solid black;
+    padding: 10px;
+  }
+  nav{
+    display: flex;/*Esto le dice a mi caja que es flexible*/
+    flex-direction: row;/*esto es una fila vertical(colum si esto fuerauna columna)*/
+    justify-content: space-evenly;/*esto centra mi fila de forma horizontal(colum de forma vertical)*/
+    align-items:center;/*esto alinea mi fila de forma vertical(colum de forma horizontal)*/
+    flex-wrap: wrap;/*esto hace que los elementos se acomoden a pesar de la pantalla*/
+    background-color: rgba(133, 6, 6, 0.129);
+  }
+  .btn{
+    height: 30px;
+    width: 50px;
+    color: blueviolet;
+    background-color: antiquewhite;
+    border-radius: 30%;
+  }
+  main{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    height: 200px;
+    margin:40px;
+    padding: 10px;
+  
+  }
+  .izquierda{
+    flex:3;/*cambia la proporcion de la caja*/
+    display: flex;
+    flex-direction: column;/*Aun que ya esta en esa posicion le ponemos para mover*/
+    gap: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .derecha{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .descrip{
+    display: flex;
+    flex-direction:row;
+    justify-content:end;
+    align-items: baseline;
+  }
+  .btn_body_dojo{
+    background-color: green;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+  }
+  .btn-likes{
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: yellow;
+  }
